@@ -1,0 +1,20 @@
+.contact-section{
+  background:#000;
+
+  .pattern-container{
+    z-index:1;
+    max-width:1600px;
+  }
+
+  .text-container{
+    .heading{
+      h3{
+        max-width:940px;
+      }
+    }
+
+    button{
+      background:$yellow;
+    }
+  }
+}

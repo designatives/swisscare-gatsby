@@ -27,8 +27,15 @@
     "gatsby-source-filesystem": "^5.5.0",
     "gatsby-transformer-remark": "^6.5.0",
     "gatsby-transformer-sharp": "^5.5.0",
+    "node-sass": "^8.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.57.1"
+    "react-helmet": "^6.1.0",
+    "sass": "^1.57.1",
+    "scss-reset": "^1.2.2"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.2.4"
   }
 }

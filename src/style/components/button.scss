@@ -1,0 +1,57 @@
+button{
+  background: $purple;
+  font-weight:bold;
+  font-size: 26px;
+  color: #000000;
+  letter-spacing: 0.17px;
+  text-align: center;
+  line-height:70px;
+  padding:0 45px;
+  text-transform:uppercase;
+  overflow:hidden;
+  position:relative;
+  transition:300ms all cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  &:after{
+    background: darken(rgba(0,0,0,0.3),20%);
+    clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+    position:absolute;
+    left:0;
+    top:0;
+    width:200%;
+    height:100%;
+    content:'';
+    transform:translateX(-100%);
+    transition:500ms all cubic-bezier(0.34, 1.56, 0.64, 1);
+    opacity:.2;
+    filter:blur(10px);
+  }
+
+  &:hover{
+    &:after{
+      transform:translateX(-25%);
+      clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+    }
+  }
+
+  &.button-secondary{
+    background:none;
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: -0.2px;
+    text-align: center;
+    border-bottom: 4px solid #000000;
+    padding:0;
+    text-transform: unset;
+    line-height:1.25em;
+
+    &:after{
+      display:none;
+    }
+
+  }
+
+  &.button-yellow{
+    background:$yellow;
+  }
+}

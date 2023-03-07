@@ -1,0 +1,101 @@
+.contact-section{
+  min-height:790px;
+  padding-top:0;
+
+  $speed : 15;
+
+  .text-container{
+    max-width:1360px;
+  }
+
+  .pattern-container{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:100%;
+  }
+
+  .pattern{
+    position:relative;
+    width:100%;
+
+    li{
+      display:inline-flex;
+      width:calc(100% / 20);
+      padding:10px;
+
+      span{
+        background:#FFF;
+        width:8px;
+        height:50px;
+        transform-origin: center center;
+        transform:rotate(360deg);
+        margin: auto;
+      }
+
+      @for $line from 0 through 10 {
+
+        $startAngle : 35-($line * 35 / 9);
+        $centerAngle : 85;
+        $unit : ($centerAngle - $startAngle) / 10;
+
+        @for $i from $line*20+1 through ($line*20+20 - 10) {
+          &:nth-child(#{$i}) {
+            span{
+              transform:rotate(#{(($i - $line*20+1) * $unit + $startAngle) - 240}deg);
+            }
+          }
+        }
+
+        @for $i from ($line*20+1 + 10) through $line*20+20 {
+          &:nth-child(#{$i}) {
+            span{
+              transform:rotate(#{-($centerAngle - ($i - $line*20+1 - 9) * $unit - 280)}deg);
+            }
+          }
+        }
+      }
+
+
+      @for $elem from 1 through 200 {
+        &:nth-child(#{$elem}){
+          span{
+            transition: transform ((($elem)%21))*$speed+($elem*10)*1ms cubic-bezier(0.85, 0, 0.15, 1);
+            transition-delay:(((($elem)%21))*($elem % $speed))*1ms
+          }
+        }
+      }
+
+    }
+
+    &.running{
+      li{
+
+        @for $line from 0 through 10 {
+
+          $startAngle : 35-($line * 35 / 9);
+          $centerAngle : 85;
+          $unit : ($centerAngle - $startAngle) / 9;
+          $firstElement : $line*20+1;
+          $lastElement : $line*20+20;
+
+          @for $i from $firstElement through ($lastElement - 10) {
+            &:nth-child(#{$i}) {
+              span{
+                transform:rotate(#{(($i - $firstElement) * $unit + $startAngle)}deg);
+              }
+            }
+          }
+
+          @for $i from ($firstElement + 10) through $lastElement {
+            &:nth-child(#{$i}) {
+              span{
+                transform:rotate(#{($centerAngle - ($i - $firstElement - 9) * $unit)}deg);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

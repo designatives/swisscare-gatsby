@@ -1,0 +1,56 @@
+header{
+  padding:38px 0;
+  position: sticky;
+  top:0;
+  background:$yellow;
+  z-index:99;
+
+  .container{
+    padding: 0 30px;
+    width:100%;
+    max-width:1660px;
+    margin:auto;
+  }
+
+  .logo{
+    width:282px;
+    height:30px;
+
+    svg{
+      width:100%;
+      height:100%;
+    }
+  }
+
+  nav{
+    font-weight:bold;
+    font-size: 18px;
+    color: #000000;
+    letter-spacing: 0.4px;
+
+    a{
+      position:relative;
+
+      &:before{
+        background: darken($purple,10%);
+        position:absolute;
+        left:-10px;
+        top:-10px;
+        height:calc(100% + 20px);
+        width:0;
+        content:'';
+        z-index:-1;
+        transition:400ms all cubic-bezier(0.34, 1.56, 0.64, 1);
+        clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+      }
+
+      &:hover{
+        &:before{
+          background: $purple;
+          width:calc(100% + 20px);
+          clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+        }
+      }
+    }
+  }
+}

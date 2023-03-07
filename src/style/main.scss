@@ -1,0 +1,99 @@
+@import '~scss-reset/_reset.scss';
+@import "fonts";
+@import "variables";
+
+
+@import "components/header";
+@import "components/footer";
+@import "components/button";
+@import "patterns/pattern1";
+@import "patterns/pattern2";
+
+@import "sections/product-section";
+@import "sections/contact-section";
+@import "sections/box-section";
+
+.controls{
+  z-index:10;
+  position: relative;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+  padding:0;
+  font-family: $primaryFont;
+}
+
+main{
+  max-width:1920px;
+  margin:auto;
+  overflow:hidden;
+}
+
+section{
+  width:100%;
+  padding-top:160px;
+  overflow: hidden;
+
+  .container{
+    max-width:1660px;
+    width:100%;
+    margin:0 auto;
+    position:relative;
+    padding:0 30px;
+  }
+
+  .pattern-container{
+    z-index:1;
+    max-width:1600px;
+  }
+
+  .text-container{
+    position:relative;
+    z-index:2;
+
+    .heading{
+      position:relative;
+
+      h1{
+        font-size: 80px;
+        font-weight:500;
+        font-style:normal;
+        color: #000000;
+        letter-spacing: 0.05px;
+        line-height: 1em;
+        margin-left:0;
+
+        span{
+          background: rgb(255,255,255);
+          padding:0 10px;
+          display:inline-block;
+          margin-left:0;
+          line-height:1.15em;
+        }
+
+      }
+
+      h3{
+        font-weight:500;
+        font-size: 70px;
+        color: #000000;
+        letter-spacing: 0.04px;
+        line-height: 80px;
+        max-width:900px;
+
+        span{
+          background: rgb(255,255,255);
+          display:inline-block;
+          padding:0 10px;
+          margin-left:0;
+          line-height:1.15em;
+        }
+      }
+    }
+  }
+}

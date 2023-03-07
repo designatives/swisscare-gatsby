@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="459px" height="250px" viewBox="0 0 459 250" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 9</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HOME-1920" transform="translate(-926.000000, -5125.000000)">
+            <g id="SAFE-TRAVELS" transform="translate(0.000000, 4750.000000)">
+                <g id="Group-7-Copy" transform="translate(890.000000, 380.742487)">
+                    <g id="Group-9" transform="translate(36.508714, 0.000000)">
+                        <g id="Group-8" transform="translate(230.804553, 119.824863) rotate(-8.000000) translate(-230.804553, -119.824863) translate(20.503099, 28.378354)" stroke="#000000" stroke-width="8">
+                            <path d="M15.6035384,114.502609 C50.9932332,95.3463132 100.29134,87.7443852 163.49786,91.6968255 C226.70438,95.6492658 311.378515,122.362127 417.520266,171.83541" id="Path-8" stroke-dasharray="60,30"></path>
+                            <polyline id="Path-11" transform="translate(403.371176, 163.633388) rotate(-10.000000) translate(-403.371176, -163.633388) " points="412.98098 146.633388 417.871176 175.71526 388.871176 180.633388"></polyline>
+                            <path d="M3.63797881e-12,96.6291365 C35.692922,55.1326064 76.6751358,28.986359 122.946641,18.1903943" id="Path-2" stroke-dasharray="60,30"></path>
+                            <polyline id="Path-11" transform="translate(108.324848, 21.184573) rotate(-59.000000) translate(-108.324848, -21.184573) " points="117.934653 4.18457313 122.824848 33.2664458 93.8248484 38.1845731"></polyline>
+                        </g>
+                        <circle id="Oval" fill="#EDF958" cx="16.7756297" cy="184.249448" r="16.7756297"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
